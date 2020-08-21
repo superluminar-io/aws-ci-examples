@@ -70,4 +70,4 @@ Resources:
           - - Type: EVENT
               Pattern: "PUSH"
             - Type: HEAD_REF
-              Pattern: "master"
+              Pattern: "^refs/heads/master$"
