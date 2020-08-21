@@ -6,7 +6,7 @@ Parameters:
     Default: superluminar-io
   RepositoryName:
     Type: String
-    Default: code-pipeline-example
+    Default: aws-ci-examples
   BuildSpecFileName:
     Type: String
     Description: The name of the buildspec to use from the github repo

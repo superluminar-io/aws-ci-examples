@@ -1,7 +1,7 @@
-AWS_ROOT_ACCOUNT=466319888746
+PR_TEST_STACK_NAME=pr-test-codebuild
 
-pipeline:
+pr-test:
 	@aws cloudformation deploy \
-		--stack-name sc-shared-products-pipeline \
-		--template-file "./pipeline.yaml" \
-		--capabilities CAPABILITY_IAM
+		--stack-name $(PR_TEST_STACK_NAME) \
+		--template-file "./pr-test-codebuild.yaml" \
+		--capabilities CAPABILITY_NAMED_IAM
